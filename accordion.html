@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <STYLE>
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 3px solid #306b75;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(17, 16, 16, 0.1);
+        }
+        
+        .accordion-item {
+            border-bottom: 1px solid #46616e;
+        }
+        
+        .accordion-header {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            text-align: left;
+            background-color: #df71a3;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #f09ae4;
+        }
+        
+        .accordion-content {
+            padding: 15px;
+            display: none;
+            background-color: #96cbed;
+            color: #32392d;
+        }
+        
+        .accordion-content p {
+            margin: 0;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .rotate {
+            transform: rotate(180deg);
+        }
+        </STYLE>
+</head>
+<body>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          WHAT IS SOCIAL WELFARE?
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p>Social welfare is a broad and imprecise term that refers to different things depending on context.
+              Strictly speaking, when used with the definite article,
+              the term refers to the overall well-being of the entire society, 
+             which could be based on such factors as standard of living,
+              access to essential social services, quality of the environment and exposure to crime.
+             In most general usage however, used without an article,
+              it refers to a governmental system designed to assist and improve
+               the well-being of those sectors of society most in need. These include those living below the poverty line,
+                the elderly/retired, sick/permanently injured, unemployed, and those with new dependents (e.g., young mothers).</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+           ABOUT SOCIAL WELFARE POLICY
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p> In the United States, with its tradition of federalism or shared government,
+               social welfare policy is made at local, state, and national levels.
+                Policy is made by the legislative, executive, and judicial branches of government in the form of laws, 
+                executive orders and administrative regulations, and court decisions.
+                 A broad view of social welfare policy also recognizes that corporations as well as nonprofit 
+                 and for-profit social service agencies make policies that affect the well-being of those they serve
+                  and the broader community and therefore have social implications. Many of today’s social welfare policies 
+                  address basic human needs such as food, housing, healthcare, and employment, and many of them have roots
+                   in the New Deal programs of the 1930s, which were responses to the Great Depression. The civil unrest of the 1960s,
+                    the “Great Recession” of 2008,  and the COVID-19 pandemic of 2020 have also brought about social policy responses.
+                </p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+            ABOUT SOCIAL SECURITY
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p>Social security may either be synonymous with welfare, or refer specifically 
+              to social insurance programs which provide support only to those who have previously contributed (e.g. most pension systems),
+               as opposed to social assistance programs which provide support on the basis of need alone (e.g. most disability benefits).
+                The International Labour Organization defines social security as covering support for those in old age,
+                 support for the maintenance of children, medical treatment, parental and sick leave, unemployment and disability benefits,
+                  and support for sufferers of occupational injury.
+              More broadly, welfare may also encompass efforts to provide a basic level of well-being through
+              subsidized social services such as healthcare, education, infrastructure, vocational training, 
+              and public housing.[10][11] In a welfare state, the state assumes responsibility for the health, education,
+           infrastructure and welfare of society, providing a range of social services such as those described.
+                  </p>
+        </div>
+    </div>
+</div>
+
+<script src="RESPONSIVE.JS"></script>
+</body>
+</html>
